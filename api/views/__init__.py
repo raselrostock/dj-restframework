@@ -1,0 +1,1 @@
+from .fun_based_views import function_based_views
