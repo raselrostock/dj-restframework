@@ -1,1 +1,2 @@
-from .fun_based_views import function_based_views
+from .fun_based_views_article_list import function_based_views_article_list
+from .fun_based_views_article_single import function_based_views_article_single
