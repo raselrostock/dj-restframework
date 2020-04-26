@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'api.apps.ApiConfig',
     # Thirdparty App
     'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 

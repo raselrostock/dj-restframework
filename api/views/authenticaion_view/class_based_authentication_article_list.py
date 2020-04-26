@@ -6,7 +6,7 @@ from rest_framework.views import APIView
 from rest_framework.generics import GenericAPIView
 from rest_framework.mixins import ListModelMixin, CreateModelMixin
 from rest_framework.response import Response
-from rest_framework.authentication import BasicAuthentication, SessionAuthentication
+from rest_framework.authentication import BasicAuthentication, SessionAuthentication, TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 
 # App imports
@@ -35,7 +35,7 @@ class Class_Based_Authentication_Article_List(APIView):
     '''
     List all articles, or create a new article
     '''
-    authentication_classes= [ SessionAuthentication, BasicAuthentication ]
+    authentication_classes= [ TokenAuthentication ]
     permission_classes=[ IsAuthenticated]
     # queryset = Article.objects.all()
     # serializer_class = ArticleModelSerializer
